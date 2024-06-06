@@ -6,6 +6,10 @@ unzip gridgain-9.0.0-beta1.zip
 mv gridgain-db-9.0.0-beta1 dist/db
 mv gridgain-cli-9.0.0-beta1 dist/cli
 ```
+1. Copy JDBC library(optional)
+```sh
+cp ignite-jdbc-9.0.0-beta1.jar dist/db/lib
+```
 1. Build the Docker image
 ```sh
 docker build -t gridgain/gridgain9:9.0.0-beta1 .
